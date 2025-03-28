@@ -1,0 +1,17 @@
+{
+  "name": "tp3-npm",
+  "version": "1.0.0",
+  "description": "Trabajo Practico Lab2025",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Franco Sardi",
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "eslint": "^9.23.0"
+  }
+}

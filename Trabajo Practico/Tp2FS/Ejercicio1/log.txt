@@ -1,0 +1,3 @@
+[2025-03-20T21:45:49.332Z] Inicio del programa
+[2025-03-20T21:45:49.344Z] Ejecutando tarea...
+[2025-03-20T21:45:54.363Z] Tarea completada
