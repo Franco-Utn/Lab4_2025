@@ -1,0 +1,28 @@
+{
+  "tareas": [
+    {
+      "id": "1",
+      "titulo": "Finalizar informe de proyecto",
+      "descripcion": "Redactar la conclusión y revisar la ortografía del informe final del proyecto.",
+      "fechaLimite": "2024-09-15"
+    },
+    {
+      "id": "2",
+      "titulo": "Implementar API de usuarios",
+      "descripcion": "Desarrollar los endpoints para la autenticación y gestión de usuarios en el backend.",
+      "fechaLimite": "2024-09-20"
+    },
+    {
+      "id": "3",
+      "titulo": "Revisar código del frontend",
+      "descripcion": "Analizar el código de la interfaz de usuario y optimizar el rendimiento.",
+      "fechaLimite": "2024-09-25"
+    },
+    {
+      "id": "4",
+      "titulo": "Preparar presentación para cliente",
+      "descripcion": "Diseñar diapositivas y ensayar la presentación del nuevo producto.",
+      "fechaLimite": "2024-09-30"
+    }
+  ]
+}

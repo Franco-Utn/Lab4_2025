@@ -1,0 +1,90 @@
+/* Modal */
+.containerPrincipalModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: brightness(80%) blur(8px); /* Mayor contraste y desenfoque */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Asegura que el modal esté encima de otros elementos */
+}
+
+.contentPopUp {
+    background-color: rgba(20, 20, 20, 0.95); /* Color más sólido para mejor legibilidad */
+    border-radius: 12px; /* Bordes ligeramente más redondeados */
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.6); /* Sombras más profundas */
+    padding: 2.5rem;
+    width: 30vw; /* Más compacto para un diseño más limpio */
+    max-width: 500px; /* Limitar el ancho en pantallas grandes */
+    max-height: 80vh; /* Evitar que se salga de la pantalla */
+    overflow-y: auto; /* Scroll si el contenido es demasiado largo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out; /* Suave efecto al aparecer */
+}
+
+.formContent {
+    display: flex;
+    flex-direction: column;
+    gap:1.2rem; /* Mayor separación entre campos */
+    width: 100%; /* Asegurar que los elementos ocupen el ancho total */
+}
+
+.formContent input, 
+.formContent textarea {
+    margin: 0.5rem;
+    width: 100%;
+    padding: 12px; /* Más espacio para mejor interacción */
+    border-radius: 8px; /* Bordes más suaves */
+    border: 1px solid #444; /* Ligeros bordes para mejor separación */
+    outline: none;
+    background: #2A2A2A;
+    color: #FFF;
+    font-size: 1rem; /* Texto más claro */
+    transition: border 0.2s ease; /* Efecto suave al enfocar */
+}
+
+.formContent input:focus,
+.formContent textarea:focus {
+    border: 1px solid #4CAF50; /* Color distintivo al enfocar */
+}
+
+.buttonCard {
+    display: flex;
+    justify-content: space-evenly; /* Mejor distribución de botones */
+    gap: 1rem; /* Espacio entre botones */
+    width: 100%;
+    margin-top: 1rem; /* Separación de los botones con los inputs */
+}
+
+.buttonCard button {
+    background-color: #4CAF50; /* Botones con color llamativo */
+    color: #FFF;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem; /* Tamaño claro, pero compacto */
+    transition: background-color 0.3s ease; /* Suave transición */
+}
+
+.buttonCard button:hover {
+    background-color: #388E3C;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4); /* Sombras interactivas */
+}
+
+/* Efecto de entrada para el modal */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,50 @@
+/* CardList.module.css */
+.cardContainer {
+    background-color: #2A2A2A;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.15);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.cardContainer:hover {
+    background-color: #333;
+    transform: scale(1.02);
+}
+
+.cardHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+h3, p {
+    color: #E0E0E0;
+}
+
+p {
+    background-color: #1E1E1E;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+p:hover {
+    background-color: #333;
+}
+
+.cardActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.cardActions button {
+    background-color: #D32F2F;
+    color: white;
+}
+
+.cardActions button:hover {
+    background-color: #B71C1C;
+}
