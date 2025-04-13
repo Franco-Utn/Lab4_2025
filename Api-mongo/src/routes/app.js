@@ -4,7 +4,7 @@ const router = require("./userRoutes");
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-mongoose.connnct(process.env.DB_URL,{})
+mongoose.connnect(process.env.DB_URL,{})
 
 
 const app = express();
